@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+.navgtition{
+    color: black;
+}
+.navgtition a:hover{
+    color: gold;
+}
+.navgtition img{
+    width: 100px;
+    height: 100px;
+}
