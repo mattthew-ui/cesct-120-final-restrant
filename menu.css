@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.shop-item{
+    margin: 30px;
+}
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+.shop-item-image{
+    height: 300px;
+    width: 300px;
+}
+.shop-item-details{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
