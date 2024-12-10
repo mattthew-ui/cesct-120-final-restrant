@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="backgroundimg8" id="home ">
+        <div class=container1>
+            <div class=contained-1>
+                <h3>Will this order be pay with <button class="hero_button " onclick="openForm1()">Cash</button> or <button class="hero_button " onclick="openForm2()">Card</button>
+                </h3>
+            </div>
+        </div>
+        <section class="form1">
+            <br><br><br>
+            <div class="form-popup" id="forms">
+                <form class="form-contain" onsubmit="formCheck();return false">
+                    <div class="column">
+                        <h4>Payment</h4>
+                    </div>
+                    <div class="row">
+                        <div class="column-container">
+                            <div class="column">
+                                <h4>Personal Information</h4>
+                                <div class="content-align">
+                                    <div class="content">
+                                        <label for="phone1">Phone Number:</label>
+                                        <input class="required" type="text" id="phone1"  name="phonenumber1" minlength="10" maxlength="10" name="phone1" onkeypress="return checkNumb(event)" required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="address1">Address:</label>
+                                        <input class="required" type="text" id="address1"  required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="city1">City:</label>
+                                        <input class="required" type="text" id="city1"  name="cities1" required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="region1">Region/Department:</label>
+                                        <input type="text" id="region1"  name="deparment1">
+                                    </div>
+                                    <div class="content">
+                                        <p style="text-align: center;"><i>please fill out</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="cash" class="column">
+                                <div class="content-align">
+                                    <h4 style="text-align: center;">Cash</h4>
+                                    <p style="text-align: center;"><i>Pay upon pickup or Delivery.</i></p>
+                                    <div class="content">
+                                        <label for="tip1">Tip</label>
+                                        <input type="text" class="tip" id="tip1"  min="0" name="tips1" onchange="updateTotalWithTip()">
+                                    </div>
+                                    <div class="content">
+                                        <h4 style="text-align: center;">Pickup or Delivery?</h4>
+                                        <div style="text-align: center;" class="dropdown">
+                                            <select class="pickDeliv" name="selected">
+                                                    <option id="pickup1" value="pickup-1">Pickup</option>
+                                                    <option id="delivery1" value="delivery-1">Delivery</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="cardcredit" class="column">
+                                <div class="content-align">
+                                    <h4 style="text-align: center;">Credit/Debit</h4>
+                                    <div class="content">
+                                        <label for="cardName">Name on card:</label>
+                                        <input class="requiredcard" type="text" id="cardName"  name="nameOnCard" required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="creditCard">Credit/Debit card:</label>
+                                        <input class="requiredcard" type="text" id="creditCard"  minlength="16" maxlength="16" name="credCard" onkeypress="return checkNumb(event)" required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="exMonth">Expiration Month</label>
+                                        <input class="requiredcard" type="text" id="exMonth"  name="month" minlength="2" maxlength="2" onkeypress="return checkNumb(event)" required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="exYear">Expiration Year</label>
+                                        <input class="requiredcard" type="text" id="exYear"  name="year" minlength="4" maxlength="4" onkeypress="return checkNumb(event)" required>
+                                    </div>
+                                    <div class="content">
+                                        <label for="cvvNumb">CVV</label>
+                                        <input class="requiredcard" type="password" id="cvvNumb"  name="cvv" minlength="3" maxlength="3" onkeypress="return checkNumb(event)" required>
+                                    </div>
+
+                                    <div class="content">
+                                        <label for="tip2">Tip</label>
+                                        <input type="text" class="tip" id="tip2"  min="0" name="tips2" onchange="updateTotalWithTip()">
+                                    </div>
+
+                                    <div class="content">
+                                        <h4 style="text-align: center;">Pickup or Delivery?</h4>
+                                        <div style="text-align: center;" class="dropdown">
+                                            <select class="pickDeliv" name="selected">
+                                                    <option id="pickup1" value="pickup-1">Pickup</option>
+                                                    <option id="delivery1" value="delivery-1">Delivery</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cartItems" class="column">
+                                <h4>Items in Cart</h4>
+                                <br>
+                                <div class="content-align">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column">ITEM</span>
+                                        <span class="cart-price cart-header cart-column" >PRICE PER ITEM</span>
+                                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                                    </div>
+                                    <div id="itemsincart" class="cart-items">
+
+                                    </div>
+                                    <br>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title" >Total</strong>
+                                        <span class="cart-total-price" >$0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column-container">
+                            <div class="column"><input type="submit" value="Submit" ></input>
+                            </div>
+                            <div class="column"><input type="button" onclick="back()" value="Cancel" ></input>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        
+        <script>
+            window.onload = function() {
+                if (localStorage.getItem('tipamount') == null) {
+                    localStorage.setItem('tipamount', 0);
+                }
+            }
+        </script>
+        <script src="meni.js"></script>
+</body>
+</html>

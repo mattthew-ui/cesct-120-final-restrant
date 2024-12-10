@@ -1,0 +1,19 @@
+.hero_title {
+    font-size: 4.5rem;
+    
+    color: black;
+    padding-top: 200px;
+}
+
+.hero_description {
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    background-color: blueviolet;
+   
+    
+}

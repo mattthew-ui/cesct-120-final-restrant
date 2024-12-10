@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
 <body>
     <ul>
         <li><a href="index.html">home</a></li>
         <li><a href="menu.html">menu</a></li>
-        <li><a href="suggest.html">suddest an item</a></li>
+        
         
         <li><a href="login.html">login</a></li>
         
@@ -17,6 +18,20 @@
         
     </ul> 
     
+    <section class="backgroundimg3" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hero-text">
+                    <h1 class="hero_title">Staff Log in</h1>
+                    <p class="hero_description"></p>
+                    Empoly Id: <input type="text" id="staffU" required><br> Enter Company Password: <input type="password" id="Staffpass" required><br><br>
+                    <button onclick="staffLogin()">Log In</button> <br><br>
+                    <h3>
+                        Enter your company id and password
+                    </h3>
+                </div>
+            </div>
+    </section>
     
 
 
@@ -37,6 +52,6 @@
             </li>
         </ul>
         </footer>
-        <script src="stafflogin.js"></script>
+        <script src="login.js"></script>
 </body>
 </html>

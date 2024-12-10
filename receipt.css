@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+#cartItems{
+    width: fit-content;
+    padding: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.receipt {
+    width: fit-content;
+    background-color: white;
+    font-family: Glass Antiqua;
+}
+.receipt h1 {
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    margin-top: 20px;
+    width: 100%;
+}
+.details{
+    text-align: center;
+    font-size: 200%;
+}
+.returnHomeButton button {
+
+    border-radius: 20px;
+    color: rgb(106, 79, 40);
+    font-size: 150%;
+    border-color: rgb(165, 86, 86);
+    background-color: rgb(219, 178, 178);
+    font-family: Glass Antiqua;
+}
+
+.returnHomeButton button:hover {
+    background-color: rgba(233, 145, 29, 0.542);
+    color: rgb(160, 106, 106);
+}
+#displayName {
+    /* text-align: right; */
+    font-size: 1.5em;
+    color: white;
+    margin-left: 20px;
+    font-family: Glass Antiqua;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.footer{
+    height: auto;
+    width: 100%;
+    bottom: 0;
+}

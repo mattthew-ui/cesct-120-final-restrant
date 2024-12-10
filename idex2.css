@@ -2,30 +2,39 @@
     margin: 0;
     padding: 0;
 }
-body {
-    height: 100vh;
-    background-size: cover;
-   
+.navbar a {
+    color: black
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-right: 30px;
 }
 .intro{
+    padding: 100px;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    font-size: larger;
-    
-}
-.footer{
-    padding: 40px 0;
-    
-}
-.mieda{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    text-align: center;
-    
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 }
