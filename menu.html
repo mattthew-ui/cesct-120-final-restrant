@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="menu.html">menu</a></li>
-        <li><a href="suggest.html">suddest an item</a></li>
-        
-        <li><a href="login.html">login</a></li>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll ">
+        <div class="container ">
+            <h3>butter my muffins bakery</h3> 
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="true " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "><i class="fas fa-bars "></i></span>
+            </button>
+            <div  id="navbar-content ">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="menu.html ">Menu</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="shinghup.html">shingh up</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="stafflogin.html">Staff login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     
-        
-    </ul>
-
-
-
 <h1>Menu items</h1>
 <h4>pick out and enjoy some our finest products.</h4>
 
@@ -31,204 +45,239 @@
 
 
 
-<section class="container content-section">
-    <h2 class="section-header">FOOD</h2>
-    <div class="shop-items">
-        <div class="shop-item">
-            <span class="shop-item-title">a dozen chcolet chip cookie</span>
-            <img class="shop-item-image" src="BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1-500x500.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+<div id ="menus">
+    <div class="bakery-food">
+    <div id="food-contain">
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1-500x500.jpg" alt="">
+            <div class="products-item-details">
+            <h3 class="product-title">Chocolate chip cookies</h3>
+                <p class="product-price">$29</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Cherry-Pie</span>
-            <img class="shop-item-image" src="Cherry-Pie.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$22.99</span>
-                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="Cherry-Pie.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+                <h3 class="product-title">Cherry Pie</h3>
+                <p class="product-price">$30</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">chocolate cake</span>
-            <img class="shop-item-image" src="chocolate-cake.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$30.00</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="chocolate-cake.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">chocolate cake</h3>
+                <p class="product-price">$50</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">ciabatta</span>
-            <img class="shop-item-image" src="ciabatta-25-1200.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$10.00</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="ciabatta-25-1200.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+                <h3 class="product-title">ciabatta</h3>
+                <p class="product-price">$35.00</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Apple Pie</span>
-            <img class="shop-item-image" src="Classic-Apple-Pie.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$20.00</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="Classic-Apple-Pie.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">Apple pie</h3>
+                <p class="product-price">$30</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Coffee Cake</span>
-            <img class="shop-item-image" src="coffee-cake.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$24.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="coffee-cake.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">Donuts</h3>
+                <p class="product-price">$50</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Croissant</span>
-            <img class="shop-item-image" src="croissant.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$12.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="croissant.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">croissant</h3>
+                <p class="product-price">$10.99</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Dinner Rolls</span>
-            <img class="shop-item-image" src="dinner-rolls.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$5.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="dinner-rolls.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">dinner rolls</h3>
+                <p class="product-price">$10.99</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">A Dozoun Gingerbread cookies</span>
-            <img class="shop-item-image" src="gingerbread-cookies.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$9.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="gingerbread-cookies.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">gingerbread cookies</h3>
+                <p class="product-price">$10.99</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">keylime pie</span>
-            <img class="shop-item-image" src="keylime-pie.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$23.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="keylime-pie.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">keyline pie</h3>
+                <p class="product-price">$10.99</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">lemon meringue pie</span>
-            <img class="shop-item-image" src="Lemon-Meringue-Pie-Featured.png">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$19.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="Lemon-Meringue-Pie-Featured.png" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">Lemon Meringue Pie</h3>
+                <p class="product-price">$10.99</p>
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">lemon pound cake</span>
-            <img class="shop-item-image" src="lemon-pound-cake.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$27.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="lemon-pound-cake.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">lemon pound cake</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">dozen Lemon sugar Cookies</span>
-            <img class="shop-item-image" src="Lemon-Sugar-Cookies-3.25.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$19.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="Lemon-Sugar-Cookies-3.25.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">lemon sugar cookies</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">20 Macarons</span>
-            <img class="shop-item-image" src="Macarons.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$35.00</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="Oatmeal-Cookies.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">Oatmeal Cookies</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Dozen Oatmeal Cookies</span>
-            <img class="shop-item-image" src="Oatmeal-Cookies.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$29.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="old-fashioned-pumpkin-pie-1200x1200-1.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">pumpkin pie</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Pumpkin Pie</span>
-            <img class="shop-item-image" src="old-fashioned-pumpkin-pie-1200x1200-1.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$30.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="pecan-pie.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">pecan pie</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Pecan Pie</span>
-            <img class="shop-item-image" src="pecan-pie.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$19.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="rosemaryfocacciawhole_alexandraskitchen.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">lemon pound cake</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">rosemary</span>
-            <img class="shop-item-image" src="rosemaryfocacciawhole_alexandraskitchen.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$19.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="soft-pretzels.png" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">soft pretzel</h3>
+            <p class="product-price">$5.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Dozen Snickerdoodle</span>
-            <img class="shop-item-image" src="Snickerdoodle.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$8.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="Snickerdoodle.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">Snickerdoodle cookie</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">soft soft-pretzel</span>
-            <img class="shop-item-image" src="soft-pretzels.png">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$6.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div> 
+        <div  class="item product-item">
+            <img id ="product-img" width="200" src="sourdough-for-beginners-25-scaled.jpg" alt="">
+            <input type="checkbox" id="checkedItem" class = "checkedItems" >
+            <div class="products-item-details">
+            <h3 class="product-title">sour dough bread</h3>
+            <p class="product-price">$10.99</p>
+                
+                <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
             </div>
-        </div>
-        <div class="shop-item">
-            <span class="shop-item-title">sourdough bread</span>
-            <img class="shop-item-image" src="sourdough-for-beginners-25-scaled.jpg">
-            <div class="shop-item-details">
-                <span class="shop-item-price">$14.99</span>
-                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-            </div>
-        </div>
+        </div> 
     </div>
-</section>
+    </div>
+
+    <section id="cart">
+        <br><br>
+        <div id="cart-header">
+            <h1>Cart</h1>
+        </div>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE PER ITEM</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <br><br>
+        <div class="cart-items" >
+
+        </div>
+
+        <div class="cart-total">
+            <strong class="cart-total-title" >Sub-Total</strong>
+            <span class="cart-total-price" >$0.00</span>
+        </div>
+        <br>
 
 
 
-
-    <footer class="media">
-        <a href="https://www.youtube.com/@thm290"></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <ul class="list ">
-            <li><a href="about.html ">About Us</a>
-            </li>
-            <li><a href="contact.html ">Contact Us</a>
-            </li>
-            <li><a href="# ">Privacy Policy</a>
-            </li>
-            <li><a href="treamscondtion.html">Terms & Conditions</a>
-            </li>
-        </ul>
-        </footer>
+        <div class="buttons">
+            <div id="clear"><button onclick="clearCart()">Clear Order</button></div>
+            <div id="checkout"><button onclick="purchaseProducts()">Purchase Order</button></div>
+        </div>
+        </div>
+        <br>
+        <button onclick="customerLogout()">Logout</button>
+    </section>
 
 
+   
+
+ 
 
 
-
+        <script src="login.js"></script>
     <script src="meni.js"></script>
 </body>
 </html>

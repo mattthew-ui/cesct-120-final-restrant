@@ -2,32 +2,164 @@
     padding: 0;
     margin: 0;
 }
-.shop-item{
+html {
+    scroll-behavior: smooth;    
+}
+.navbar a {
+    color: black;
+    
+}
+.navbar a:hover {
+    color: blueviolet;
+    
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: yellow;
+    margin-right: 30px;
+}
+#menu {
     margin: 30px;
 }
-.shop-item-title{
+#title-menu {
     display: block;
     width: 100%;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
     color: #333;
     margin-bottom: 15px;
+    
 }
-.shop-item-image{
-    height: 300px;
-    width: 300px;
-}
-.shop-item-details{
+.bakery-food {
     display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    background-color: cornflowerblue;
+    padding: 2%;
+}
+#cart-container 
+{
+    background-color: blue;
+    justify-content: center;
+}
 
+#cart-header {
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    
 }
-.shop-item-price {
-    flex-grow: 1;
-    color: #333;
+.buttons {
+    display: flex;
+    justify-content: center;
 }
-.shop-items {
+
+#clear button {
+    padding: 2%;
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 20px;
+    color: rgb(106, 79, 40);
+    font-size: 150%;
+    border-color: rgb(165, 86, 86);
+    background-color: rgb(219, 178, 178);
+    
+}
+
+#clear button:hover {
+    background-color: rgba(216, 172, 114, 0.542);
+    color: rgb(232, 221, 221);
+}
+
+#checkout button {
+    padding: 2%;
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 20px;
+    color: rgb(106, 79, 40);
+    font-size: 150%;
+    border-color: rgb(165, 86, 86);
+    background-color: rgb(219, 178, 178);
+    
+}
+
+#cart {
+    background-color: blue;
+    
+}
+
+#checkout button:hover {
+    background-color:blue;
+    color: rgb(232, 221, 221);
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cart-item {
+    width: 25%;
+    
+    color: white;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    
+    
+    color: white;
+}
+
+.cart-quantity
+{
+    width: 20%;
+}
+
+.cart-item-title
+{
+    
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.item 
+{
+    border:3px solid gray;
+    background-color: gray;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    color: black;
+    width: 300px;
+    padding: 1%;
+    margin: 10px;
+    
+}
+#food-container {
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
+    margin: 1cm;
 }

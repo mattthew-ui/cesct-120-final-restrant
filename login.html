@@ -3,38 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>login</title>
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="menu.html">menu</a></li>
-        <li><a href="suggest.html">suddest an item</a></li>
-        
-        <li><a href="login.html">login</a></li>
-        
-        
-    </ul>   
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll ">
+        <div class="container ">
+            <h3>butter my muffins bakery</h3> 
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarScroll " aria-controls="navbarScroll " aria-expanded="true " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "><i class="fas fa-bars "></i></span>
+            </button>
+            <div  id="navbar-content ">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px; ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="menu.html ">Menu</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="stafflogin.html">Staff login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="login" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="hero-text">
+                <h1 class="hero_title">Log in</h1>
+                <p class="hero_description"></p>
+                Email: <input type="text" id="email" required><br><br> Enter Password: <input type="password" id="pass" required><br><br>
+                <button onclick="login()">Log In</button> <br><br>
+                <h3>New here<a href="shinghup.html"><button class="hero_button">Sign Up</button></a>
+                </h3>
+            </div>
+        </div>
+</section>
 
 
-
-
-<footer class="media">
-        <a href="https://www.youtube.com/@thm290"></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <ul class="list ">
-            <li><a href="about.html ">About Us</a>
-            </li>
-            <li><a href="contact.html ">Contact Us</a>
-            </li>
-            <li><a href="# ">Privacy Policy</a>
-            </li>
-            <li><a href="treamscondtion.html">Terms & Conditions</a>
-            </li>
-        </ul>
-</footer>
     <script src="login.js"></script>
 </body>
 </html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backgroundimg8 {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    
+}
+.contained-1
+{
+    margin-top: 120px;
+    color:  gray;
+}
+
+.hero_button {
+    color:  gray;
+}
+
+.form-popup {
+    display: none;
+    position: absolute;
+    font-size: 250%;
+    
+    width: 100%;
+}
+.form-contain
+{
+    font-size: 15px;
+    padding: 30px;
+    background-color: rgb(172, 173, 172);
+    margin-left: 1cm;
+    margin-right: 1cm;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.column-container {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    color: aliceblue;
+    background-color: lightslategray;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+.content-align
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.content
+{
+    padding: 10px;
+}
+
+.column button {
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+
+
+
+
+
+#itemsincart button,
+h1 {
+    display: none;
+}
+
+#itemsincart input {
+    background-color: transparent;
+    border: transparent;
+    width: 30px;
+    pointer-events: none;
+    color: white;
+}
+
+.cart-column
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    
+}
+
+.cart-row
+{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-item
+{
+    width: 40%;
+}
+
+.cart-price
+{
+    width: 50%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity
+{
+    width: 20%;
+}
+
+.cart-items .cart-column
+{
+    border-bottom: none;
+}
+.cart-total {
+    text-align: right;
+    font-size: 150%;
+}

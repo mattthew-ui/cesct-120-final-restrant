@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="receipt.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <div class="center">
+        <div id="cartItems" class="column">
+            <br>
+            <h2 >Thank you for your purchase,
+                <div id="displayName"></div>
+            </h2><br>
+            <i style="text-align: center;">Your order will be ready in: <section id="prepTime" ></section></i>
+
+            <br><br>
+            <div class="content-align">
+                <div class="details"> Order details </div>
+                <hr><br>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column" >PRICE PER ITEM</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div id="itemsincart" class="cart-items">
+
+                </div>
+                <br>
+                <div class="cart-total">
+                    <strong class="cart-total-title" >Total</strong>
+                    <span class="cart-total-price" >$0.00</span>
+                </div>
+            </div>
+            <br>
+            <div class="returnHomeButton">
+                <button onclick="returnHome(),clearCart()">finsed</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <br>
+    <script src="receipt.js"></script>
+    <script src="meni.js"></script>
+</body>
+</html>
