@@ -20,17 +20,17 @@ function removeItem(divToRemove) {
   }
   function addItems(){
     const mainItemsContainer = document.querySelector("#food-contain");
-    let breakfastTitle = document.getElementById('productName').value
-    let breakfastPrice = document.getElementById('product-price').value
-    let breakfastImg = document.getElementById('product-img').value
+    let productTitle = document.getElementById('productName').value
+    let foodPrice = document.getElementById('product-price').value
+    let productImg = document.getElementById('product-img').value
     let newProdut = document.createElement('div')
     newProdut.classList.add('item')
     newProdut.classList.add('product-item')
     const newItem = `
-    <img id ="productimg" width="200" src="${breakfastImg}" alt="${breakfastTitle}">
+    <img id ="productimg" width="200" src="${productImg}" alt="${productTitle}">
     <div class="products-item-details">
-      <h3 class="product-title">${breakfastTitle}</h3>
-        <p class="product-price">${breakfastPrice}</p>
+      <h3 class="product-title">${productTitle}</h3>
+        <p class="product-price">${foodPrice}</p>
         <button onclick="addToCart(this)" class="btn prime-btn product-btn">Add To Cart</button>
     </div>`
     newProdut.innerHTML = newItem;
